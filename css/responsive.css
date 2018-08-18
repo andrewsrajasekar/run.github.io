@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* CSS Document */
+
+@-ms-viewport
+{
+	width:device-width;
+}
+@-viewport
+{
+	width:device-width;
+}
+@media only screen and (max-width:1200px)
+{
+	img
+	{
+		max-width:100%;
+	}
+	.
+	{
+		width:auto; padding-left:20px; padding-right:20px;
+	}
+	.nav
+	{
+		position: absolute;
+		top: 0;
+		right: 0;
+		left:0;
+		z-index:999;
+		float:none;
+		padding: 0 0;
+		margin:0;
+		background:#fff;
+		box-shadow:0px 0px 36px rgba(0, 0, 0, 0.2);
+	}
+	.nav ul li
+	{
+		margin: 0;
+	}
+	.nav ul li a
+	{
+		padding: 12px 0;
+		text-align:center;
+		background:rgba(0, 0, 0, 0.6);
+	}
+	.nav ul li ul
+	{
+		position: relative;
+		left:0;
+	}
+	.nav ul ul li a
+	{
+		text-align:center;
+		background:#fff;
+	} 
+	.nav ul li ul:before
+	{
+		top: -12px;
+		left: 0;
+		right:0;
+	}
+	.nav ul li a span
+	{
+		display: block;
+	}
+	.header-top h1
+	{
+		position:relative;
+		z-index:99999;
+	}
+	.header-right
+	{
+		position:relative;
+		z-index:99999;
+		margin-right: 100px;
+	}
+	.nav-shrink .nav ul li a
+	{
+		padding: 10px 0;
+	}
+	.nav-shrink .nav
+	{
+		margin-left: 0;
+	}
+	.nav-shrink .nav ul ul li a
+	{
+		padding: 4px 0;
+	}
+}
+@media only screen and (max-width:1024px)
+{
+	
+}
+@media only screen and (max-width:960px)
+{
+	.header-top
+	{
+		padding: 0 20px;
+	}
+	.section-home article
+	{
+		width: auto;
+		padding: 35px 20px;
+	}
+	.section-home figure
+	{
+		padding: 0 20px 35px 20px;
+	}
+	.section-home figure aside:before
+	{
+		top: -15px;
+		left: -15px;
+		width: 80px;
+	}
+	.section-home figure aside:after
+	{
+		top: -15px;
+		left: -15px;
+		height: 80px;
+	}
+	.footer_marg
+	{
+		width: auto;
+	}
+	.footer-bottom
+	{
+		padding: 35px 20px;
+	}
+	.section-technical
+	{
+		background: #2083fd;
+		padding: 35px 20px;
+	}
+	.section-non-technical
+	{
+		padding: 35px 20px;
+	}
+}
+@media only screen and (max-width:768px)
+{
+	.section-home h3
+	{
+		font-size: 60px;
+	}
+	.section-home h2
+	{
+		font-size: 48px;
+	}
+	.foot_list
+	{
+		width: auto;
+		float:none;
+		padding: 50px 20px;
+	}
+	.section-technical nav, .section-technical article
+	{
+		width: auto;
+		float:none;
+	}
+	.section-technical nav ul 
+	{
+		display:flex;
+		flex-wrap:wrap;
+	}
+	.section-technical nav ul li
+	{
+		float:left;
+		width:23%;
+		margin:0 1%;
+		display:flex;
+	}
+	.section-technical nav ul li a
+	{
+		padding: 22px 10px;
+     	font-size: 12px;
+		text-align:center;
+		width:100%;
+	}
+	.section-technical nav ul li a:before
+	{
+		content: "\f107";
+		margin-right: 0;
+		display: block;
+		margin-bottom: 5px;
+	}
+	.section-non-technical aside
+	{
+		width: auto;
+		float:none;
+	}
+}
+@media only screen and (max-width:480px)
+{
+	.section-home figure aside
+	{
+		width: auto;
+		float:none;
+	}
+	.section-technical nav ul li
+	{
+		width:48%;
+	}
+	.section-technical article aside, .section-technical article figure
+	{
+		width: auto;
+		float:none;
+		clear:both;
+		margin:30px 0;
+	}
+	section-technical article figure
+	{
+		margin-top:50px;
+	}
+	.section-non-technical aside figure, .section-non-technical aside figcaption
+	{
+		width: auto;
+		float:none;
+	}
+	.section-non-technical aside figcaption
+	{
+		padding:30px 0;
+	}
+}
+@media only screen and (max-width:320px)
+{
+	.section-home h3
+	{
+		font-size: 50px;
+	}
+	.section-home h2
+	{
+		font-size: 38px;
+	}
+}

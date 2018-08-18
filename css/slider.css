@@ -1,0 +1,207 @@
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+.container
+{
+	position: relative;
+}
+
+#slick
+{
+    height: 100vh;
+    min-height: 600px;
+    max-height: 900px;
+    position: relative;
+    width: 100%;
+    background: #000 url(../images/loading.svg) 50% 50% no-repeat;
+}
+.slick-dots
+{
+	position: absolute;
+	bottom:100px;
+	left: 0;
+	right:0;
+	width: 100%;
+	text-align:center;
+	display:none;
+	visibility:hidden;
+}
+.slick-dots li
+{
+	cursor: pointer;
+	display:inline-block;
+	width: 10px;
+	height:10px;
+	border-radius:50%;
+	padding: 0;
+	margin:0 3px;
+	border: 2px solid #fff;
+	position:relative;
+}
+.slick-dots li:last-child
+{
+	border: 2px solid #fff;
+}
+.slick-dots li, .slick-dots li button
+{
+	outline: none;
+}
+.slick-dots li button
+{
+	background: #fff;
+	border: none;
+	width: 0px;
+	height: 8px;
+	padding: 0;
+	cursor: pointer;
+	display: block;
+	border-radius:50%;
+	position:absolute;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+.slick-slide .img--holder
+{
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	background-color:#2083fd;
+    overflow: hidden;
+	position:relative;
+	top:0;
+	bottom:0;
+	width:100%;
+	height:100%;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+	z-index:999;
+}
+.caption
+{
+	visibility: visible;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:100px;
+	width:80%;
+	height:100%;
+	text-transform:uppercase;
+	display:table;
+	margin:0 auto;
+	text-align: left;
+	animation-delay: 2s;
+	z-index:-2;
+}
+.caption > div
+{
+	display:table-cell;
+	vertical-align:middle;
+	background:url(../images/text-icon.svg) left center no-repeat;
+	background-size:230px 230px;
+}
+.caption a
+{
+	color:#fff;
+	border-radius:3px;
+	background:#d62b89;
+	font-size:14px;
+	text-transform:uppercase;
+	font-weight:400;
+	padding:8px 10px;
+	display:inline-block;
+	position:relative;
+	margin-top:10px;
+	margin-left:300px;
+}
+.slide--has-caption .caption
+{
+	visibility: visible!important;
+	opacity: 1;
+	cursor: pointer;
+	pointer-events: none;
+	z-index: 2;
+}
+/*.slide--has-caption:hover .caption
+{
+	visibility: visible!important;
+	opacity: 1;
+	cursor: pointer;
+	pointer-events: none;
+	z-index: 2;
+}*/
+.slick-slide .img--holder h2
+{
+	font-size: 80px;
+    color: #fff;
+    font-weight: bold;
+    transition-delay: 2s;
+    line-height: 0;
+    margin: 10px 0 0 175px;
+	font-family: 'Righteous', cursive;
+}
+
+.slick-prev,.slick-prev:focus,.slick-prev:hover{color:transparent;outline:0}.slick-next,.slick-prev{font-size:0;line-height:0;position:absolute;top:50%;display:block;padding:0;-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);transform:translate(0,-50%);cursor:pointer;border:none;z-index:9999}.slick-next:focus:before,.slick-next:hover:before,.slick-prev:focus:before,.slick-prev:hover:before{opacity:1}.slick-next:before,.slick-prev:before{font-family:slick;font-size:40px;line-height:1;opacity:.75;color:#000;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.slick-prev{left:30px;background:url(../images/left-arrow.svg) center center no-repeat;width:40px;height:40px}[dir=rtl] .slick-prev{right:30px}.slick-prev:before,[dir=rtl] .slick-prev:before{content:''}.slick-next{right:30px;background:url(../images/right-arrow.svg) center center no-repeat;width:40px;height:40px}[dir=rtl] .slick-next{left:30px}.slick-next:before{content:" "}[dir=rtl] .slick-next:before{content:''}
+
+@media only screen and (max-width:1024px)
+{
+	.slick-slide .img--holder h2
+	{
+		
+	}
+}
+@media only screen and (max-width:960px)
+{
+	.caption > div
+	{
+		background-size:200px 200px;
+	}
+	.slick-slide .img--holder h2
+	{
+		font-size: 30px;
+		line-height:32px;
+	}
+}
+@media only screen and (max-width:768px)
+{
+	.slick-slide .img--holder h2
+	{
+		font-size: 20px;
+		line-height:22px;
+		margin:0;
+	}
+	.caption
+	{
+		text-align: center;
+		width:100%;
+		left:0;
+		right:0;
+		padding:0 50px;
+	}
+	.caption > div
+	{
+		background:none;
+	}
+	.caption a
+	{
+		margin-left:0;
+	}
+}
+@media only screen and (max-width:480px)
+{
+	.slick-slide .img--holder h2
+	{
+		font-size: 20px;
+		line-height:32px;
+	}
+}
